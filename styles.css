@@ -55,3 +55,15 @@ button{
 button:hover {
     background-color: darkolivegreen;
 }
+
+/*.checkbox {
+    display:inline-flex;
+    align-items:center;
+}*/
+
+
+/*
+input[type="checkbox"] {
+    margin-right: 50px;
+}
+*/
