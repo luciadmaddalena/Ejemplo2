@@ -19,6 +19,7 @@ const data = {nombre, apellido, edad, color, fechaNac, terminos}
 console.log(data)
 
 console.log('Datos enviados correctamente')
+alert('Tu presentacion fue cargada correctamente: ')
 
 }
 
