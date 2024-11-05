@@ -12,11 +12,10 @@ function enviarDatos(event){
     const edad = document.getElementById('edad')
     const color = document.getElementById('color').value;
     const fechaNac = document.getElementById('fechaNac').value;
-    const telefono = document.getElementById('telefono').value;
     const terminos = document.getElementById('terminos').value;
 
 
-const data = {nombre, apellido, edad, color, fechaNac, telefono, terminos}
+const data = {nombre, apellido, edad, color, fechaNac, terminos}
 console.log(data)
 
 console.log('Datos enviados correctamente')
@@ -31,11 +30,10 @@ function enviarDatos2(event) {
     const edad = document.getElementById('edad')
     const color = document.getElementById('color').value;
     const fechaNac = document.getElementById('fechaNac').value;
-    const telefono = document.getElementById('telefono').value;
     const terminos = document.getElementById('terminos').value;
 
 
-    const data = {nombre, apellido, edad, color, fechaNac, telefono, terminos};
+    const data = {nombre, apellido, edad, color, fechaNac, terminos};
     console.log(data);
 
 
