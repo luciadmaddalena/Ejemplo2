@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    <script>
-        function redireccionar(){
-            event.preventDefault()
-            window.location.href = "nuevo.html;"
-        }
-    </script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="varios.js" defer></script>
     <title>Ejemplo2</title>
 </head>
 <body>
     
     <div class="container">
         <h1> MI PRESENTACIÓN </h1>
-        <form id="presentacion" onsubmit="redireccionar(event)">
+        <form id="presentacion" onclick="iniciarFormulario()" onsubmit="redireccionar(event)">
             <div>
                 <label for="nombre">Mi nombre es:</label>
                 <input type="text" id="nombre" name="nombre" required>
@@ -39,13 +34,13 @@
             </div>
             <div>
                 <label for="telefono">Mi número de tel. es:</label>
-                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <input type="tel" id="telefono" name="telefono">
             </div>
             <div>
                 <label for="terminos">Acepto los terminos y condiciones </label>
                 <input type="checkbox" id="terminos" name="terminos" >
             </div>
-            <button> Enviar </button>
+            <button type="submit"> Enviar </button>
 
         </form>
     </div>
