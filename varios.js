@@ -22,40 +22,11 @@ console.log('Datos enviados correctamente')
 alert('Tu presentacion fue cargada correctamente: ')
 
 }
-
-function enviarDatos2(event) {
-    event.preventDefault(); 
-
-    const nombre = document.getElementById('nombre').value;
-    const apellido = document.getElementById('apellido').value;
-    const edad = document.getElementById('edad')
-    const color = document.getElementById('color').value;
-    const fechaNac = document.getElementById('fechaNac').value;
-    const terminos = document.getElementById('terminos').value;
+function submit(){
+    window.location.href = 'nuevo.html';
+}
 
 
-    const data = {nombre, apellido, edad, color, fechaNac, terminos};
-    console.log(data);
-
-
-    fetch('/index', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Error en la solicitud');
-        }
-        return response.json();
-    })
-    .then(data => {
-        console.log('Éxito:', data);
-        alert(data.message); 
-    })
-    .catch(() => {
-        alert('Error al instanciar los datos');
-    });
+function volver(){
+    window.location.href = 'index.html';
 }
